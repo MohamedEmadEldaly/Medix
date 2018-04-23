@@ -1,0 +1,161 @@
+/*abstracts*/
+/*layout*/
+/*start navigation*/
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+  z-index: 1000;
+}
+
+.navbar-default {
+  border: none;
+  height: 8rem;
+  background: #FFF;
+}
+
+.navbar-brand > img {
+  width: 11rem;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.navbar-right {
+  margin-top: 10px;
+}
+
+.navbar-default .navbar-toggle {
+  margin-top: 10px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav > li > a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #178ccb;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  .navbar-default .navbar-nav > li > a:hover:after {
+    width: 70%;
+  }
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-toggle {
+  color: #178ccb;
+}
+
+.navbar-toggle {
+  padding: 13px 13px;
+  margin-top: 0;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #178ccb;
+  width: 25px;
+  height: 3px;
+}
+
+/*responsive in menu*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    z-index: 1000;
+  }
+  .navbar-header {
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  .navbar-collapse {
+    background-color: #178ccb;
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: #FFF;
+    transition: background .3s ease-in-out;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    background: #FFF;
+    color: #178ccb;
+  }
+  .top-image img {
+    height: 20px;
+  }
+  .navbar-right {
+    margin-top: 0;
+    margin-bottom: .1rem;
+  }
+  .navbar-default .navbar-toggle {
+    margin-top: 1.8rem;
+  }
+  /*hamburger effect*/
+  .navbar-default .navbar-toggle .icon-bar {
+    width: 3rem;
+    transform-origin: left;
+    transition: all .5s ease-in-out;
+  }
+  .navbar-default .navbar-toggle.active .icon-bar {
+    transition: all .5s ease-in-out;
+  }
+  .navbar-default .navbar-toggle.active .icon-bar:nth-of-type(3) {
+    opacity: 0 !important;
+    visibility: hidden;
+  }
+  .navbar-default .navbar-toggle.active .icon-bar:nth-of-type(2) {
+    transform: rotate(45deg);
+  }
+  .navbar-default .navbar-toggle.active .icon-bar:nth-of-type(4) {
+    transform: rotate(-45deg);
+  }
+  .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 7px;
+  }
+}
+
+/*end navigation*/
+/*base*/
+html {
+  font-size: 60.25%;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+/*components*/
+/*pages*/
+body {
+  height: 4000px;
+}
