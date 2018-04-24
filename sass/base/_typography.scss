@@ -1,6 +1,19 @@
+/*typography*/
 html{
     font-size: 60.25%;
 }
 .lato{
     font-family: 'Lato', sans-serif;
+}
+
+/*typography*/
+.main-heading{
+    font-size: 3.2rem;
+    margin-bottom: 2.5rem;
+    color:$gray-dark;
+}
+.paragraph{
+    font-size: 1.8rem;
+    line-height: 150%;
+    color:$gray-light;
 }

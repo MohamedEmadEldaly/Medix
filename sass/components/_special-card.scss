@@ -1,0 +1,74 @@
+/*special card*/
+.special-card {
+    background: $white-color;
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: $shadow-1;
+    border:1px solid #EEE;
+    margin-bottom: 5rem;
+
+    &__logo{
+        width:8rem;
+        height: 8rem;
+        font-size: 3.5rem;
+        border:1px solid $primary-color;
+        border-radius: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$primary-color;
+        transform: scale(1) translate(0,0);
+        transition: all .5s ease-in-out;
+        box-shadow: $shadow-1;
+    }
+
+    &:hover &__logo{
+        background: $primary-color;
+        color:$white-color;
+        border: none;
+        transform: scale(1.1) translate(0,-6rem);
+        
+    }
+
+    &:hover &__heading:after{
+        width: 8rem;
+    }
+
+    &__heading{
+        color:$primary-color;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        position: relative;
+        margin-bottom: 5rem;
+        
+
+        &:after{
+            content: "";
+            width:5rem;
+            height: 2px;
+            background: $primary-color;
+            position: absolute;
+            left:50%;
+            top:150%;
+            transform:translate(-50%,-50%);
+            transition: all .5s ease-in-out;            
+        }
+    }
+
+    &__paragraph{
+        color:rgb(165, 165, 165);
+        font-size: 1.6rem;
+
+    }
+    &__clickable{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom: 0;
+    }
+}
+/*special card*/

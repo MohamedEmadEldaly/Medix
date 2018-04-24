@@ -1,0 +1,32 @@
+/*btn component*/
+.btn{
+    display: inline-block;
+    border-radius: 4px;
+    padding: 1.5rem 3rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: all .5s ease-in-out;
+    text-transform: capitalize;
+    box-shadow: $shadow-2;
+
+    &:hover{
+        text-decoration: none;
+        color:$white-color;
+        animation: pulse .5s ease-in-out infinite;
+    }
+
+    &:visited,
+    &:link{
+        text-decoration: none;
+        color:#FFF;
+    }
+    .fab{
+        font-size: 1.7rem;
+        margin-right: 1rem;
+    }
+    &--blue{
+        background: $primary-color-light;
+        color:$white-color;
+    }
+}
+/*btn component*/

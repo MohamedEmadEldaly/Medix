@@ -6,6 +6,7 @@
 
 /*layout*/
 @import"layout/navigation";
+@import"layout/slider";
 
 
 
@@ -20,6 +21,8 @@
 
 
 /*components*/
+@import "components/button";
+@import "components/special-card";
 
 
 /*pages*/
