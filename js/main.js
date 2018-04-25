@@ -26,6 +26,19 @@ $(document).ready(function (){
          autoHeight:"on"
      });
 
+     //counters
+     var flag = 1;     
+     $(window).scroll(function (){
+         if ($(window).scrollTop() > $('.statistic').offset().top - 400 && flag === 1){
+
+            $('.counter').countTo({
+                refreshInterval: 10
+             });
+
+             flag = 0;
+         }
+     });
+
 
 
 });

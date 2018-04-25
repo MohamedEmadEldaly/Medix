@@ -11,6 +11,23 @@ html{
     font-size: 3.2rem;
     margin-bottom: 2.5rem;
     color:$gray-dark;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5rem;
+    padding-bottom: 2.5rem;
+    &::after{
+        content: "";
+        display: block;
+        width:10rem;
+        height: 1px;
+        background: rgb(175, 175, 175);
+        position: absolute;
+        left:50%;
+        top:80%;
+        transform:translate(-50%,-50%);
+
+    }
 }
 .paragraph{
     font-size: 1.8rem;

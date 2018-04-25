@@ -1,0 +1,36 @@
+/*counter*/
+.counter-container{
+    color:#EEE;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    cursor: pointer;
+    transition: color .5s ease-in-out;
+    margin-bottom: 5rem;
+
+    &:hover{
+        color:$white-color;
+    }
+
+    .counter-details{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        i{
+            font-size: 4rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        span{
+            font-size: 2rem;
+        }
+
+    }
+
+    .counter{
+        margin-right: 1rem;
+        font-size: 5rem;
+    }
+}
+/*counter*/
