@@ -1,0 +1,101 @@
+/*testmonials*/
+.testmonial{
+    position: relative;
+
+    .testmonial__item{
+        text-align: center;
+        position: relative;
+
+        
+        &::after{
+            content:"\201D";
+            font-size: 7rem;
+            opacity: .3;
+            position: absolute;
+            top: 60%;
+            right: 0;
+        }
+        &::before{
+            content:"\201C";
+            font-size: 7rem;
+            opacity: .3;
+            position: absolute;
+            top:3rem;
+            left:0;
+
+            
+        }
+    }
+
+    .test-img{
+        width:5rem;
+        height: 5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: auto;
+        margin-bottom: 2rem;        
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .test-para{
+        color:$gray-light-2;
+    }
+    .client-name{
+        color:$primary-color;
+        font-size: 2rem;
+    }
+}
+/*indicators*/
+.indicators{
+    width: 30%;
+    margin: auto;
+    margin-top: 2.5rem;
+}
+
+.indicators-list{
+    list-style: none;
+}
+.indicators-item{
+    float: left;
+    width:2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border:1px solid $primary-color;
+    margin: auto;    
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.indicators-list > .slick-active > li{
+    background: $primary-color !important;
+}
+/*override slick*/
+.testmonial .fas{
+    font-size: 3rem;
+    color:$primary-color-light;
+    cursor: pointer;
+}
+.fa-chevron-left{
+    position: absolute;
+    left:-10%;
+    top:48%;
+    transform: translate(-50%,-50%);
+}
+.fa-chevron-right{
+    position: absolute;
+    right:-10%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+@media(max-width:767px){
+    .fa-chevron-right{
+        top:48%;
+        right:-10%;
+    }
+    .fa-chevron-left{
+        left:-5%;
+    }
+}
+/*testmonials*/
