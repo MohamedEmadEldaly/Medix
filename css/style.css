@@ -520,7 +520,8 @@ html {
 /*testmonials*/
 /*pages*/
 body {
-  height: 4000px;
+  height: 7000px;
+  overflow-x: hidden !important;
 }
 
 /*about section*/
@@ -626,7 +627,7 @@ body {
   }
 }
 
-.statistic .black-overlay {
+.black-overlay {
   padding-top: 8rem;
   padding-bottom: 8rem;
   background: rgba(0, 0, 0, 0.5);
@@ -639,11 +640,11 @@ body {
   bottom: 0;
 }
 
-.statistic .black-overlay .main-heading {
+.black-overlay .main-heading {
   color: #FFF;
 }
 
-.statistic .black-overlay .main-heading::after {
+.black-overlay .main-heading::after {
   background: #FFF;
 }
 
@@ -655,3 +656,69 @@ body {
 }
 
 /*testmonials*/
+/*location*/
+.location {
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../images/location.jpeg");
+  background-size: cover;
+  background-position: 80% 100%;
+  min-height: 55rem;
+}
+
+@media (max-width: 991px) {
+  .location {
+    min-height: 90rem;
+  }
+}
+
+.location__information {
+  margin-bottom: 4rem;
+}
+
+.location__map {
+  height: 35rem;
+  overflow: hidden;
+}
+
+.location__map iframe {
+  width: 100%;
+  min-height: 30rem;
+  border: none;
+  position: relative;
+  top: -50px;
+}
+
+.location .information-heading {
+  color: #FFF;
+  font-size: 2.7rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.location .information-heading::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 4rem;
+  background: #178ccb;
+  left: 0;
+  top: 4rem;
+}
+
+.location .information-paragraph {
+  color: #FFF;
+  letter-spacing: .1rem;
+}
+
+.location .location-address {
+  margin-top: 2.5rem;
+  color: #FFF;
+}
+
+.location .location-address h4 {
+  font-size: 2rem !important;
+}
+
+/*location*/

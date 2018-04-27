@@ -45,13 +45,6 @@ $(document).ready(function (){
         autoplaySpeed : 4000,			
         nextArrow : '<span class="fas fa-chevron-right"></span>',
         prevArrow : '<span class="fas fa-chevron-left"></span>'
-      
-
-        
-
-        
-
-
 
      });
 
