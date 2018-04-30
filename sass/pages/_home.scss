@@ -147,6 +147,7 @@ body{
     &__map{
         height: 35rem;
         overflow: hidden;
+        margin-top:5rem;
 
         iframe{
             width:100%;
@@ -186,3 +187,89 @@ body{
 
 }
 /*location*/
+
+/*contact section*/
+.contact-section{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    
+    .contact{
+        
+        
+        
+        &__form{
+            
+            
+            .button{
+                border:none;
+                padding: 1rem 2.5rem;
+                background: $primary-color-light;
+                color:$white-color;
+                display: block;
+                margin: auto;
+                transition: all .5s ease-in-out;
+                &:hover{
+                    background: $primary-color;
+                }
+                .fas{
+                    margin-right: 1rem;
+                }
+            }
+            
+        }
+        
+        
+        .form-group{
+            position: relative;
+            margin-bottom: 4rem;
+            
+            label{
+                position: absolute;
+                top: -.5rem;
+                left: 0;
+                color:$gray-light;
+                font-size: 1.5rem;
+                transition: all .5s ease-in-out;
+            }
+        }
+        
+        input,textarea{
+            border:none;
+            border-bottom: 2px solid $primary-color-light-2;
+            transition: all .5s ease-in-out;
+            width:100%;
+            padding-top: .5rem;
+            padding-bottom: .5rem;    
+            &:focus{
+                
+                outline: none;
+                border-bottom: 2px solid $primary-color;
+            }
+            
+            
+        }
+        
+        input.focus ~ label,
+        textarea.focus ~ label{
+            font-size: 1.3rem;
+            color:$primary-color;
+            top:-1.5rem;
+        }
+        
+        input[type="email"] ~ label,
+        textarea ~ label {
+            left: 1.5rem !important;
+        }
+        
+        textarea{
+            resize: none;
+            height: 15rem;
+        }
+        
+        
+    }
+    
+    
+}
+/*contact section*/
+

@@ -47,6 +47,15 @@ $(document).ready(function (){
         prevArrow : '<span class="fas fa-chevron-left"></span>'
 
      });
+    
+    // input label focus
+    $('.input').focus(function () {
+        $(this).addClass('focus');
+    }).blur(function () {
+        if ($(this).val() == "") {
+            $(this).removeClass('focus');
+        }
+    });
 
 
 

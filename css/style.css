@@ -205,6 +205,13 @@ html {
   color: #5c656d;
 }
 
+/*classess*/
+.custom-padding {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/*classess*/
 /*components*/
 /*btn component*/
 .btn {
@@ -680,6 +687,7 @@ body {
 .location__map {
   height: 35rem;
   overflow: hidden;
+  margin-top: 5rem;
 }
 
 .location__map iframe {
@@ -722,3 +730,73 @@ body {
 }
 
 /*location*/
+/*contact section*/
+.contact-section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.contact-section .contact__form .button {
+  border: none;
+  padding: 1rem 2.5rem;
+  background: #5dafdb;
+  color: #FFF;
+  display: block;
+  margin: auto;
+  transition: all .5s ease-in-out;
+}
+
+.contact-section .contact__form .button:hover {
+  background: #178ccb;
+}
+
+.contact-section .contact__form .button .fas {
+  margin-right: 1rem;
+}
+
+.contact-section .contact .form-group {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.contact-section .contact .form-group label {
+  position: absolute;
+  top: -.5rem;
+  left: 0;
+  color: #5c656d;
+  font-size: 1.5rem;
+  transition: all .5s ease-in-out;
+}
+
+.contact-section .contact input, .contact-section .contact textarea {
+  border: none;
+  border-bottom: 2px solid #a2d1ea;
+  transition: all .5s ease-in-out;
+  width: 100%;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.contact-section .contact input:focus, .contact-section .contact textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #178ccb;
+}
+
+.contact-section .contact input.focus ~ label,
+.contact-section .contact textarea.focus ~ label {
+  font-size: 1.3rem;
+  color: #178ccb;
+  top: -1.5rem;
+}
+
+.contact-section .contact input[type="email"] ~ label,
+.contact-section .contact textarea ~ label {
+  left: 1.5rem !important;
+}
+
+.contact-section .contact textarea {
+  resize: none;
+  height: 15rem;
+}
+
+/*contact section*/
