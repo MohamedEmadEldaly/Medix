@@ -799,4 +799,8 @@ body {
   height: 15rem;
 }
 
+.contact-section .contact .input {
+  font-size: 1.4rem !important;
+}
+
 /*contact section*/
