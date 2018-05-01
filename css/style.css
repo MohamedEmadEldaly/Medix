@@ -151,6 +151,115 @@
 }
 
 /*slider edit*/
+/*footer section*/
+.footer {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  min-height: 40rem;
+  background: #000;
+  color: #5c656d;
+  /*footer info*/
+  /*footer special*/
+  /*footer map*/
+  /*footer subscribe*/
+}
+
+.footer__info .footer-logo {
+  width: 15rem;
+}
+
+.footer__info .footer-logo img {
+  max-width: 100%;
+}
+
+.footer__info p {
+  line-height: 150%;
+}
+
+.footer__special {
+  padding-top: 2rem;
+}
+
+.footer__special .special__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer__special .special__list--item:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.footer__special .special__list--link {
+  text-decoration: none;
+  color: #5c656d;
+  transition: all .5s ease-in-out;
+}
+
+.footer__special .special__list--link:hover {
+  color: #178ccb;
+}
+
+.footer__map {
+  padding-top: 2rem;
+}
+
+.footer__map .map__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer__map .map__list--item:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.footer__map .map__list--link {
+  text-decoration: none;
+  color: #5c656d;
+  transition: all .5s ease-in-out;
+}
+
+.footer__map .map__list--link:hover {
+  color: #178ccb;
+}
+
+.footer__heading {
+  color: #FFF;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.footer__subscribe {
+  padding-top: 2rem;
+}
+
+.footer__subscribe .social__list {
+  padding-left: 0;
+  list-style: none;
+  padding-top: 2.5rem;
+}
+
+.footer__subscribe .social__list--item {
+  float: left;
+  cursor: pointer;
+}
+
+.footer__subscribe .social__list--item:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+.footer__subscribe .social__list--link {
+  text-decoration: none;
+  color: #5c656d;
+  font-size: 4rem;
+  transition: all .5s ease-in-out;
+}
+
+.footer__subscribe .social__list--link:hover {
+  color: #178ccb;
+}
+
+/*footer section*/
 /*base*/
 /*start animation*/
 @keyframes pulse {
@@ -527,7 +636,6 @@ html {
 /*testmonials*/
 /*pages*/
 body {
-  height: 7000px;
   overflow-x: hidden !important;
 }
 
@@ -804,3 +912,5 @@ body {
 }
 
 /*contact section*/
+/*footer*/
+/*footer*/
