@@ -3,11 +3,6 @@ $(document).ready(function (){
 
     'use strict';
 
-    // navigation button active
-
-    $('.navbar-toggle').on("click", function () {
-        $(this).toggleClass('active');
-    });
 
     // close nav when click some where else 
     

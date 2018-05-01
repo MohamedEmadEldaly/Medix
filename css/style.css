@@ -120,23 +120,42 @@
   .navbar-default .navbar-toggle {
     margin-top: 1.8rem;
   }
+  /*ordinary*/
+  .navbar-default .navbar-toggle.collapsed .icon-bar {
+    width: 3rem;
+    transform-origin: left;
+    transition: all .5s ease-in-out;
+  }
+  .navbar-default .navbar-toggle.collapsed .icon-bar {
+    transition: all .5s ease-in-out;
+  }
+  .navbar-default .navbar-toggle.collapsed .icon-bar:nth-of-type(3) {
+    opacity: 1 !important;
+    visibility: visible;
+  }
+  .navbar-default .navbar-toggle.collapsed .icon-bar:nth-of-type(2) {
+    transform: rotate(0);
+  }
+  .navbar-default .navbar-toggle.collapsed .icon-bar:nth-of-type(4) {
+    transform: rotate(0);
+  }
   /*hamburger effect*/
   .navbar-default .navbar-toggle .icon-bar {
     width: 3rem;
     transform-origin: left;
     transition: all .5s ease-in-out;
   }
-  .navbar-default .navbar-toggle.active .icon-bar {
+  .navbar-default .navbar-toggle .icon-bar {
     transition: all .5s ease-in-out;
   }
-  .navbar-default .navbar-toggle.active .icon-bar:nth-of-type(3) {
+  .navbar-default .navbar-toggle .icon-bar:nth-of-type(3) {
     opacity: 0 !important;
     visibility: hidden;
   }
-  .navbar-default .navbar-toggle.active .icon-bar:nth-of-type(2) {
+  .navbar-default .navbar-toggle .icon-bar:nth-of-type(2) {
     transform: rotate(45deg);
   }
-  .navbar-default .navbar-toggle.active .icon-bar:nth-of-type(4) {
+  .navbar-default .navbar-toggle .icon-bar:nth-of-type(4) {
     transform: rotate(-45deg);
   }
   .navbar-toggle .icon-bar + .icon-bar {
