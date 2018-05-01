@@ -4,7 +4,7 @@
     padding-top: 8rem;
     padding-bottom: 8rem;
     min-height: 40rem;
-    background: #000;
+    background: #24292e;
     color:$gray-light;
     
     /*footer info*/
@@ -25,6 +25,9 @@
     /*footer special*/
     &__special {
         padding-top: 2rem;
+        @media (max-media:767px){
+                padding-left: 2.5rem;
+            }
         
         .special__list{
             list-style: none;
@@ -54,6 +57,9 @@
     /*footer map*/
     &__map {
         padding-top: 2rem;
+        @media (max-media:767px){
+                padding-left: 2.5rem;
+            }
         
         .map__list{
             list-style: none;
@@ -88,6 +94,10 @@
     }
     /*footer subscribe*/
     &__subscribe{
+        
+        @media (max-media:767px){
+                padding-left: 2.5rem;
+            }
         padding-top: 2rem;
         
         .social{
@@ -115,6 +125,54 @@
                     
                 }
             }
+        }
+        
+        /*subscribe form*/
+        .subscribe__form{
+            
+            
+            
+            .sub-form{
+                background:#000;
+                border:1px solid transparent;
+                border-radius: .5rem;
+                width: 80%;
+                position: relative;
+                
+                
+                input{
+                    padding: 1rem 1.5rem;
+                    border: none;
+                    background: transparent;
+                    width: 80%;
+                    &:focus{
+                        outline: none;
+                    }
+                    
+                    @media(max-width:400px){
+                        font-size: 1.2rem;
+                    }
+                    
+                }
+                
+                button{
+                    position: absolute;
+                    bottom: -1px;
+                    top: -1px;
+                    right: -1px;
+                    background: $primary-color;
+                    border: none;
+                    width: 25%;
+                    border-radius: .5rem;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    color: #FFF;
+                    font-size: 2rem;
+                    
+                }
+            }
+            
+            
         }
     }
     
