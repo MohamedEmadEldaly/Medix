@@ -98,5 +98,10 @@
         left:-5%;
     }
 }
-
+.slick-slide
+{
+    &:focus,a{
+        outline: none !important;
+    }
+}
 /*testmonials*/
