@@ -362,6 +362,10 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
+.rale {
+  font-family: 'Raleway', sans-serif;
+}
+
 /*typography*/
 .main-heading {
   font-size: 3.2rem;
@@ -709,6 +713,10 @@ html {
   .fa-chevron-left {
     left: -5%;
   }
+}
+
+.slick-slide:focus, .slick-slide a {
+  outline: none !important;
 }
 
 /*testmonials*/
